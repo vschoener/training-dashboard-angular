@@ -41,6 +41,8 @@ testem.log
 .DS_Store
 Thumbs.db
 
+# environement
+/src/environments/environment.ts
 
 # Docker
 docker-compose.override.yml
