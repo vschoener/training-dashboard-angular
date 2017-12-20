@@ -1,0 +1,211 @@
+nav.navbar {
+  background: #2f333e;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  position: relative;
+  border-radius: 0;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  padding-left: 0;
+  padding-right: 0;
+  .nav-item>a span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 400;
+    font-size: 0.7em;
+  }
+  .badge {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+  }
+  .nav-item>a {
+    position: relative;
+  }
+  a {
+    color: inherit;
+  }
+  .container-fluid {
+    width: 100%;
+  }
+  .navbar-holder {
+    width: 100%;
+  }
+  .brand-big {
+    display: block;
+  }
+  .menu-btn.active span:first-of-type {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+  /* Search should be moved inside a search component */
+  .search-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    background: #fff;
+    z-index: 12;
+    border-radius: 0;
+    display: none;
+    .dismiss {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.5em;
+      color: #999;
+    }
+    form {
+      height: 100%;
+      input {
+        height: 100%;
+        border: none;
+        padding: 20px;
+      }
+    }
+  }
+
+  .menu-btn {
+    margin-right: 20px;
+    font-size: 1.2em;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+
+  .menu-btn {
+    span {
+      width: 20px;
+      height: 2px;
+      background: #fff;
+      display: block;
+      margin: 4px auto 0;
+      -webkit-transition: all 0.3s cubic-bezier(0.81, -0.33, 0.345, 1.375);
+      transition: all 0.3s cubic-bezier(0.81, -0.33, 0.345, 1.375);
+    }
+    span:nth-of-type(2) {
+      position: relative;
+      width: 35px;
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+    span:nth-of-type(2)::after {
+      -webkit-transform: rotate(145deg);
+      transform: rotate(145deg);
+      position: absolute;
+      top: -2px;
+      left: 0;
+    }
+  }
+  .menu-btn.active span:last-of-type {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+
+  .navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+  }
+  .brand-small {
+    display: none;
+  }
+
+  .menu-btn span:nth-of-type(2)::before,
+  .menu-btn span:nth-of-type(2)::after {
+    content: '';
+    width: 6px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 0;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+  .menu-btn span:nth-of-type(2)::before,
+  .menu-btn span:nth-of-type(2)::after {
+  content: '';
+    width: 6px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 0;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+  .nav-item>a.logout i {
+    margin-left: 10px;
+  }
+}
+
+.navbar {
+  padding: .5rem 1rem;
+}
+
+@media (max-width: 1199px) {
+  nav.navbar .menu-btn {
+    margin-right: 20px;
+    font-size: 1.2em;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+  nav.navbar .menu-btn.active span:first-of-type {
+    -webkit-transform: none;
+    transform: none;
+  }
+  nav.navbar .menu-btn span:first-of-type {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+  nav.navbar .menu-btn.active span:last-of-type {
+    -webkit-transform: none;
+    transform: none;
+  }
+  nav.navbar .menu-btn span:last-of-type {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+  nav.navbar .navbar-brand .brand-small {
+    display: block !important;
+  }
+  nav.navbar .brand-small {
+    display: block;
+  }
+  nav.navbar .brand-big {
+    display: none;
+  }
+  nav.navbar .menu-btn span:nth-of-type(2)::before,
+  nav.navbar .menu-btn span:nth-of-type(2)::after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  nav.navbar .menu-btn span:nth-of-type(2)::after {
+    -webkit-transform: rotate(145deg);
+    transform: rotate(145deg);
+    position: absolute;
+    top: -2px;
+    left: 0;
+  }
+}

@@ -1,0 +1,50 @@
+@import "vendor";
+
+h1 {
+  color: $primary;
+}
+
+h4, .h4 {
+  font-size: 1.1rem;
+}
+
+button, input[type='submit'] {
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 300 !important;
+}
+
+button, input {
+  outline: none !important;
+}
+
+*[class*="icon-"] {
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+}
+
+a, i, span {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-red {
+  background: #ff7676 !important;
+  color: #fff;
+}
+
+.bg-orange {
+  background: #ffc36d !important;
+  color: #fff;
+}
