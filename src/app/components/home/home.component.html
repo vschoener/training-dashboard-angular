@@ -1,0 +1,20 @@
+<table class="channels table">
+  <thead>
+    <tr>
+      <th scope="col">Meta ID</th>
+      <th scope="col">Twitch ID</th>
+      <th scope="col">Display Name</th>
+      <th scope="col">Followers</th>
+      <th scope="col">Views</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let channel of channels">
+      <th scope="row">{{channel.metaId}}</th>
+      <th scope="row">{{channel.id}}</th>
+      <th scope="row">{{channel.displayName}}</th>
+      <th scope="row">{{channel.followers}}</th>
+      <th scope="row">{{channel.views}}</th>
+    </tr>
+  </tbody>
+</table>

@@ -12,6 +12,7 @@ import { FooterComponent } from './shared/layout/footer/footer.component';
 import { SidebarMenuComponent } from './shared/layout/sidebar-menu/sidebar-menu.component';
 import { ConfigurationService } from './service/configuration.service';
 import { HomeComponent } from './components/home/home.component';
+import { ApiClientService } from './service/api-client.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HomeComponent } from './components/home/home.component';
     HttpClientModule,
   ],
   providers: [
-   ConfigurationService
+   ConfigurationService,
+   ApiClientService
   ],
   bootstrap: [AppComponent]
 })

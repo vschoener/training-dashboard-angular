@@ -3,7 +3,6 @@ import { environment } from '../../environments/environment';
 
 @Injectable()
 export class ConfigurationService {
-
   constructor() { }
 
   getApiConfig() {
